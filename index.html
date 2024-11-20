@@ -3,162 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Francesco Medina - Curriculum Vitae</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            color: #000;
-            background-color: #fff;
-        }
-        .container {
-            width: 90%;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-        h1, h2, h3, h4 {
-            margin: 0 0 10px 0;
-        }
-        h1, h2, h3 {
-            text-align: center;
-        }
-        h1 {
-            margin-top: 20px;
-        }
-        h2, h3 {
-            border-bottom: 1px solid #000;
-            padding-bottom: 5px;
-        }
-        p, ul {
-            line-height: 1.6;
-            margin: 10px 0;
-        }
-        ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        ul li {
-            margin-bottom: 5px;
-        }
-        .bold {
-            font-weight: bold;
-        }
-        .section {
-            margin-bottom: 20px;
-        }
-        .contact p {
-            margin: 5px 0;
-        }
-        .no-margin {
-            margin: 0;
-        }
-    </style>
+    <title>Francesco Medina - Quantum Computing Research</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
+    <header>
         <h1>Francesco Medina</h1>
-        <h2>Software Engineer</h2>
-        <div class="section" style="text-align: center;">
-            <h3>Contact Details</h3>
-            <div style="display: flex; justify-content: center;">
-                <div style="flex: 1;"><p><span class="bold">Location:</span> Turin, Italy</p></div>
-                <div style="flex: 1;"><p><span class="bold">Phone:</span> +39 3491469897</p></div>
-                <div style="flex: 1;"><p><span class="bold">Email:</span> pacimedina@gmail.com</p></div>
-            </div>
-        </div>
-        <div class="section">
-            <h3>Profile</h3>
-            <p>+7 years of professional experience in <span class="bold">software engineering</span>. Satisfactory ability to adapt to different stressful situations. Serious person that always gives the best effort to problem-solving.</p>
-        </div>
-        <div class="section" style="text-align: center;">
-            <h3>Languages</h3>
-            <div style="display: flex; justify-content: center;">
-                <div style="flex: 1;"><span class="bold">English:</span> IELTS 7</div>
-                <div style="flex: 1;"><span class="bold">Spanish:</span> native</div>
-                <div style="flex: 1;"><span class="bold">Italian:</span> native</div>
-            </div>
-        </div>
-        <div class="section">
-            <h3>Employment History</h3>
-            <h4>System Manager at Ericsson, Genoa</h4>
-            <p><span class="bold">May 2023 — Present</span></p>
-            <ul>
-                <li>Driving security studies in line with reference architecture and technology strategy, drive discussions to summarize software specifications for design teams and support to design teams.</li>
-                <li>Coding to support proof-of-concepts for new strategic studies, evaluate third-party software to be included in code, proof new architecture and tools at the edge of the technology.</li>
-                <li>Working in cloud-native microservices at the moment, propose/contribute to innovative solutions, propose/contribute to patents, propose/contribute to white papers, and participate in review standards.</li>
-            </ul>
-            <h4>Software Engineer at Coolshop, Turin</h4>
-            <p><span class="bold">February 2018 — November 2022</span></p>
-            <ul>
-                <li>Controlling data: ensuring no regressions during deployment and minimizing code rework during merge requests.</li>
-                <li>Autonomy: respecting declared and agreed estimates with project manager. Writing technical documents before starting code implementation.</li>
-                <li>Speech: strengthening speech skills, yearly talks with the company to share knowledge.</li>
-            </ul>
-            <h4>Junior Software Developer at Coolshop, Turin</h4>
-            <p><span class="bold">September 2017 — February 2018</span></p>
-            <ul>
-                <li>Gained experience using various web programming languages: PHP (using Symfony framework), NodeJs (with ExpressJs, React library, and GraphQL).</li>
-                <li>Improved autonomy in problem-solving and time management. Learned the Agile-SCRUM methodology, using Jira software for tracking and project management.</li>
-            </ul>
-        </div>
-        <div class="section">
-            <h3>Education</h3>
-            <h4>MSc. Computer Engineering, Politecnico di Torino, Turin</h4>
-            <p><span class="bold">2021 — 2024</span></p>
-            <h4>BSc. Computer Engineering, Politecnico di Torino, Turin</h4>
-            <p>Computer systems, integration of hardware and software, and advanced aspects of operating systems and programming languages.</p>
-            <h4>Industrial Chemistry, ITIS Luigi Casale, Turin</h4>
-            <p>High School Graduation</p>
-        </div>
-        <div class="section">
-            <h3>Scientific Publications</h3>
-            <h4>Analysis and Contributions to an Open Source Kyber Library in Rust</h4>
-            <p>Authors: F. Medina, M.C. Molteni, A. Di Scala, L. Nava</p>
-            <p><span class="bold">Presented in:</span> 1st Workshop on Quantum-Secure Networks and Systems (QSNS2024), co-located with the 29th IEEE Symposium on Computers and Communications</p>
-            <p><span class="bold">Date:</span> June 26-29, 2024</p>
-            <p><span class="bold">Location:</span> ESIEE PARIS, France</p>
-            <p>This paper focuses on analyzing the efficiency of a purely Rust-written Kyber library for ARM Cortex M4 microcontrollers. The analysis includes performance comparisons with a C-written Kyber library, as well as the identification and resolution of issues within the Rust-written Kyber library. Contributions include solutions for unhandled True Random Number Generator (TRNG) exceptions, enhancements in code quality, and improvements in code coverage, all of which have been approved by the library maintainers and released.</p>
-        </div>
-        <div class="section">
-            <h3>Academic Projects</h3>
-            <h4>MSc. Thesis - Analysis and Contributions to a Post-Quantum Cryptography Library written in Rust for an ARM Cortex-M4 board</h4>
-            <p><span class="bold">September 2022 — Present</span></p>
-            <h4>Distributed eCommerce Service</h4>
-            <p><span class="bold">July 2021 — October 2021</span></p>
-            <ul>
-                <li>Microservices, Kotlin, Mongo, Docker, Saga Pattern (Choreography), Spring, Kafka</li>
-            </ul>
-            <h4>Solidarity Purchasing Group</h4>
-            <p><span class="bold">June 2021 — December 2021</span></p>
-            <ul>
-                <li>NodeJS, Sequelize, SonarCube, Docker, Polaris. Agile-SCRUM with YouTrack</li>
-            </ul>
-            <h4>Discourse Processing - Natural Language Processing (NLP)</h4>
-            <p><span class="bold">August 2020 — October 2020</span></p>
-            <ul>
-                <li>Realized an academic assignment about Discourse Processing, using Python</li>
-            </ul>
-            <h4>Car Pooling - Android App</h4>
-            <p><span class="bold">February 2021 — June 2021</span></p>
-            <ul>
-                <li>Android Studio, Kotlin, Firestore</li>
-            </ul>
-            <h4>Nice-Bins - Ambient Intelligence</h4>
-            <p><span class="bold">May 2017 — October 2017</span></p>
-            <ul>
-                <li>ARDUINO, Raspberry Pi, Proximity/Ultrasound Sensors, Java</li>
-            </ul>
-        </div>
-        <div class="section">
-            <h3>Volunteer Work</h3>
-            <h4>Public Relations Advisor, EsPerTo No-Profit Association, Turin</h4>
-            <p><span class="bold">June 2016 — December 2017</span></p>
-            <ul>
-                <li>Created the 2017 Webpage using PHP, HTML, CSS, WordPress, CDN CloudFlare</li>
-            </ul>
-        </div>
-    </div>
+        <p>Software Engineer | Quantum Computing Researcher</p>
+        <p><a href="mailto:a.francesco.medina@gmail.com">a.francesco.medina@gmail.com</a> | <a href="https://linkedin.com/in/francesco-medina" target="_blank">LinkedIn</a></p>
+    </header>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I am a software engineer with over 7 years of professional experience and a strong academic foundation in computer engineering. My research interests include post-quantum cryptography and quantum computing, demonstrated through contributions to open-source libraries and academic publications.</p>
+    </section>
+
+    <section id="education">
+        <h2>Education</h2>
+        <ul>
+            <li>
+                <strong>Master of Science in Computer Engineering</strong><br>
+                Politecnico di Torino, 2024<br>
+                GPA: 3.78/4.00<br>
+                Thesis: <em>Analysis and Contributions to a Post-Quantum Cryptography Library in Rust</em>
+            </li>
+            <li>
+                <strong>Bachelor of Science in Computer Engineering</strong><br>
+                Politecnico di Torino, 2020<br>
+                GPA: 3.10/4.00
+            </li>
+        </ul>
+    </section>
+
+    <section id="publications">
+        <h2>Publications</h2>
+        <ul>
+            <li>
+                F. Medina, M. C. Molteni, A. J. Di Scala, L. Nava.<br>
+                <em>Analysis and Contributions to an Open Source Kyber Library in Rust</em><br>
+                IEEE Symposium on Computers and Communications, Paris, France, 2024.<br>
+                <a href="https://doi.org/10.1109/ISCC61673.2024.10733712" target="_blank">DOI Link</a>
+            </li>
+        </ul>
+    </section>
+
+    <section id="experience">
+        <h2>Experience</h2>
+        <ul>
+            <li>
+                <strong>System Manager, Ericsson</strong><br>
+                May 2023 - Present, Genoa, Italy<br>
+                Conducted security analyses, developed proofs-of-concept, and contributed to cloud-native microservices and architectural innovation.
+            </li>
+            <li>
+                <strong>Software Engineer, Coolshop SRL</strong><br>
+                Sep 2017 - Nov 2022, Turin, Italy<br>
+                Led the development of critical projects using Node.js, React, and Docker, optimizing system performance and scalability.
+            </li>
+        </ul>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>Programming Languages: Rust, Java, JavaScript (Node.js, React), Python</li>
+            <li>Tools: Docker, Kubernetes, Git</li>
+            <li>Research: Post-Quantum Cryptography, Open Source Contributions</li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>Connect with me: <a href="https://github.com/francescomedina" target="_blank">GitHub</a> | <a href="https://linkedin.com/in/francesco-medina" target="_blank">LinkedIn</a> | <a href="mailto:a.francesco.medina@gmail.com">Email</a></p>
+        <p>&copy; 2024 Francesco Medina</p>
+    </footer>
 </body>
 </html>
