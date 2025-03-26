@@ -2,102 +2,181 @@
 <html lang="en" data-bs-theme="auto">
 
 <head>
-  <link rel="icon" href="favicon.ico" type="image/x-icon">
-  <meta property="og:title" content="Francesco Medina">
-  <meta property="og:description" content="Francesco Medina's personal website">
-  <meta property="og:image" content="img-3-4.png">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Francesco Medina's personal website">
   <meta name="author" content="Francesco Medina">
   <title>Francesco Medina</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" defer></script>
+
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: system-ui, sans-serif;
+    }
+
+    .navbar-custom {
+      background-color: #b5a378;
+    }
+
+    .navbar-custom .navbar-brand {
+      font-weight: 300;
+      font-size: 1.5rem;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: #1a1a1a;
+    }
+
+    .navbar-custom .nav-link {
+      color: #1a1a1a;
+      font-weight: 400;
+      font-size: 1rem;
+    }
+
+    .navbar-custom .nav-link:hover {
+      color: #000000;
+    }
+
+    .profile-img {
+      width: 100%;
+      max-width: 260px;
+      height: auto;
+      object-fit: cover;
+      margin-bottom: 1.2rem;
+    }
+
+    .profile-links a {
+      display: block;
+      margin-bottom: 0.3rem;
+      text-align: center;
+    }
+
+    @media (min-width: 768px) {
+      .profile-links a {
+        text-align: left;
+      }
+    }
+
+    /* Compensazione per scroll e navbar sticky */
+    section[id] {
+      scroll-margin-top: 80px;
+    }
+  </style>
 </head>
 
 <body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-md sticky-top navbar-custom shadow-sm">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Francesco Medina</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNavbar">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="cv-francesco-medina.pdf" target="_blank">CV</a></li>
+          <li class="nav-item"><a class="nav-link" href="#bio">Bio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#publications">Publications</a></li>
+          <li class="nav-item"><a class="nav-link" href="#interests">Research Interests</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
   <div class="container">
     <div class="row">
       <div class="col-lg-8 mx-auto p-4 py-md-5">
-        <header class="d-flex align-items-center">
-          <h1 class="display-4 mb-4">Francesco Medina</h1>
-        </header>
-
         <main class="row">
-          <div class="col-md-4 text-lg-start text-center my-auto">
-            <div>
-              <img src="img-3-4.png" alt="francesco-medina" class="img-fluid mb-3"
-                style="max-width: 77%; height: auto;">
-              <div class="pt-3 mx-auto ms-lg-0" style="max-width: 77%;">
-                <div class="row text-start">
-                  <div class="col-6">
-                    <a href="cv-francesco-medina.pdf" target="_blank" class="d-block">CV</a>
-                    <a href="https://www.linkedin.com/in/francesco-medina/" target="_blank"
-                      class="d-block">LinkedIn</a>
-                    <a href="https://scholar.google.com/citations?user=XXuUI2UAAAAJ&hl=en&oi=ao" target="_blank"
-                      class="d-block">Scholar</a>
-                  </div>
-                  <div class="col-6">
-                    <a href="https://github.com/francescomedina" target="_blank"
-                      class="d-block">GitHub</a>
-                    <a href="https://orcid.org/0009-0006-1291-3618" target="_blank"
-                      class="d-block">ORCID</a>
-                    <a href="mailto:a.francesco.medina@gmail.com">email</a>
-                  </div>
-                </div>
-              </div>
+          <!-- Left: Image + Links -->
+          <div class="col-md-4 text-center text-md-start mb-5 mb-md-0">
+            <img src="img-3-4.png" alt="Francesco Medina" class="profile-img">
+            <div class="profile-links">
+              <a href="cv-francesco-medina.pdf" target="_blank">CV</a>
+              <a href="https://www.linkedin.com/in/francesco-medina/" target="_blank">LinkedIn</a>
+              <a href="https://scholar.google.com/citations?user=XXuUI2UAAAAJ&hl=en&oi=ao" target="_blank">Scholar</a>
+              <a href="https://github.com/francescomedina" target="_blank">GitHub</a>
+              <a href="https://orcid.org/0009-0006-1291-3618" target="_blank">ORCID</a>
+              <a href="mailto:a.francesco.medina@gmail.com">email</a>
             </div>
           </div>
-          <div class="col-md-8 pt-5">
-            <h2 class="display-6">Bio</h2>
-            <p>
-              I earned a Master of Science in Computer Engineering from Politecnico di Torino under the supervision
-              of
-              Prof. <a href="https://www.polito.it/en/staff?p=antonio.discala" target="_blank">Antonio José Di Scala</a>. Collaborating with <a
-                href="https://www.securitypattern.com/" target="_blank">Security Pattern</a>, my thesis focused on
-              integrating <a href="https://pq-crystals.org/kyber/" target="_blank">CRYSTALS-KYBER</a> post-quantum cryptographic algorithms into embedded systems,
-              leading to a first-author publication presented at the <a href="https://2024.ieee-iscc.org/">29th IEEE
-                Symposium on Computers and Communications (ISCC)</a> in Paris, France. Currently, I am a System Manager
-              at <a href="https://www.ericsson.com/en" target="_blank">Ericsson</a>. <br> <br> My goal is to deepen my
-              expertise in Quantum Information
-              Science
-              and contribute to the field by transforming concepts into practical, real-world solutions.
-            </p>
-          </div>
-          <div class="col-12 mt-5">
-            <h2 class="display-6">Publications</h2>
-            <ul class="list-unstyled ps-0">
-              <li class="d-block pt-3">
-                <b>F. Medina</b>, M. C. Molteni, A. J. Di Scala and L. Nava, <a
-                  href="https://ieeexplore.ieee.org/document/10733712" target="_blank">Analysis and contributions to
-                  an open source Kyber library in Rust</a> 2024 IEEE Symposium on Computers and Communications
-                (ISCC),
-                Paris, France, 2024, pp. 1-6
-              </li>
 
-              <li class="d-block pt-4">
-                <b>F. Medina</b>, A. J. Di Scala, <a href="https://webthesis.biblio.polito.it/30939/"
-                  target="_blank">Analysis and Contributions to a Post-Quantum Cryptography Library written in Rust
-                  for a ARM Cortex-M4 board</a> 2024 Master of Science's thesis, Politecnico di Torino, Italy
-              </li>
-            </ul>
-          </div>
+          <!-- Right: Content -->
+          <div class="col-md-8">
+            <section id="bio">
+              <h2 class="display-6">Bio</h2>
+              <p>
+                I earned a Master of Science in Computer Engineering from Politecnico di Torino under the supervision
+                of Prof. <a href="https://www.polito.it/en/staff?p=antonio.discala" target="_blank">Antonio José Di Scala</a>.
+                Collaborating with <a href="https://www.securitypattern.com/" target="_blank">Security Pattern</a>,
+                my thesis focused on integrating <a href="https://pq-crystals.org/kyber/" target="_blank">CRYSTALS-KYBER</a>
+                post-quantum cryptographic algorithms into embedded systems, leading to a first-author publication
+                presented at the <a href="https://2024.ieee-iscc.org/" target="_blank">29th IEEE Symposium on Computers and Communications (ISCC)</a>
+                in Paris, France. Currently, I am a System Manager at <a href="https://www.ericsson.com/en" target="_blank">Ericsson</a>.
+              </p>
+              <p>
+                My goal is to deepen my expertise in Quantum Information Science and contribute to the field by
+                transforming concepts into practical, real-world solutions.
+              </p>
+            </section>
 
-          <div class="col-12 mt-4">
-            <h2 class="display-6">Peer Review Activities</h2>
-            <ul class="list-unstyled ps-0">
-              <li class="d-block pt-3">
-               Reviewed three IEEE papers on quantum-secure networks and systems for the <b>2025 IEEE Symposium on Computers and Communications (ISCC)</b>, specifically for the 30th ISCC – Workshop on Quantum-Secure Networks and Systems (QSNS), held in Bologna, Italy.
-              </li>
-            </ul>
+            <section id="publications" class="mt-5">
+              <h2 class="display-6">Publications</h2>
+              <ul class="list-unstyled ps-0">
+                <li class="d-block pt-3">
+                  <b>F. Medina</b>, M. C. Molteni, A. J. Di Scala and L. Nava,
+                  <a href="https://ieeexplore.ieee.org/document/10733712" target="_blank">
+                    Analysis and contributions to an open source Kyber library in Rust
+                  </a>, 2024 IEEE Symposium on Computers and Communications (ISCC), Paris, France, 2024, pp. 1–6.
+                </li>
+                <li class="d-block pt-4">
+                  <b>F. Medina</b>, A. J. Di Scala,
+                  <a href="https://webthesis.biblio.polito.it/30939/" target="_blank">
+                    Analysis and Contributions to a Post-Quantum Cryptography Library written in Rust for an ARM Cortex-M4 board
+                  </a>, 2024 Master of Science's thesis, Politecnico di Torino, Italy.
+                </li>
+              </ul>
+            </section>
+
+            <section id="interests" class="mt-5">
+              <h2 class="display-6">Research Interests</h2>
+              <ul class="list-unstyled ps-0">
+                <li class="d-block pt-3">
+                  Implement novel hybrid protocols which employ post-quantum cryptography (PQC) and quantum key distribution (QKD) methods to take
+                  advantage of the unbroken security of the quantum entanglement states for initial key distribution.
+                  Combine effective isogeny-based algorithms (such as SIDH variants) with lattice-based ones such as ML-KEM and ML-DSA.
+                </li>
+                <li class="d-block pt-3">
+                  Boost security with quantum machine learning (QML) techniques, including anomaly detection and classifiers.
+                  Evaluate performance (latency, noise resilience, QBER) via real-world experiments.
+                </li>
+              </ul>
+            </section>
+
+            <section class="mt-5">
+              <h2 class="display-6">Peer Review Activities</h2>
+              <ul class="list-unstyled ps-0">
+                <li class="d-block pt-3">
+                  Reviewed three IEEE papers on quantum-secure networks and systems for the <b>2025 IEEE Symposium on Computers and Communications (ISCC)</b>,
+                  specifically for the 30th ISCC – Workshop on Quantum-Secure Networks and Systems (QSNS), held in Bologna, Italy.
+                </li>
+              </ul>
+            </section>
           </div>
         </main>
+
         <footer class="pt-5 my-5 text-muted border-top text-center">
-          &middot; 2025
+          © 2025
         </footer>
       </div>
     </div>
   </div>
 
 </body>
-
 </html>
