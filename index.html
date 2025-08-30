@@ -62,7 +62,6 @@
       }
     }
 
-    /* Compensazione per scroll e navbar sticky */
     section[id] {
       scroll-margin-top: 80px;
     }
@@ -71,7 +70,6 @@
 
 <body>
 
-  <!-- Navbar -->
   <nav class="navbar navbar-expand-md sticky-top navbar-custom shadow-sm">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">Francesco Medina</a>
@@ -89,12 +87,10 @@
     </div>
   </nav>
 
-  <!-- Main Content -->
   <div class="container">
     <div class="row">
       <div class="col-lg-8 mx-auto p-4 py-md-5">
         <main class="row">
-          <!-- Left: Image + Links -->
           <div class="col-md-4 text-center text-md-start mb-5 mb-md-0">
             <img src="img-3-4.png" alt="Francesco Medina" class="profile-img">
             <div class="profile-links">
@@ -107,7 +103,6 @@
             </div>
           </div>
 
-          <!-- Right: Content -->
           <div class="col-md-8">
             <section id="bio">
               <h2 class="display-6">Bio</h2>
@@ -133,7 +128,7 @@
                   <b>F. Medina</b>, M. C. Molteni, A. J. Di Scala and L. Nava,
                   <a href="https://ieeexplore.ieee.org/document/10733712" target="_blank">
                     Analysis and contributions to an open source Kyber library in Rust
-                  </a>, 2024 IEEE Symposium on Computers and Communications (ISCC), Paris, France, 2024, pp. 1–6.
+                  </a>, 2024 IEEE Symposium on Computers and Communications (ISCC), Paris, France, 2024, pp. 1-6.
                 </li>
                 <li class="d-block pt-4">
                   <b>F. Medina</b>, A. J. Di Scala,
@@ -147,14 +142,26 @@
             <section id="interests" class="mt-5">
               <h2 class="display-6">Research Interests</h2>
               <ul class="list-unstyled ps-0">
+                  I'm interested in how to resolve current limitations in Quantum Machine Learning
+                  (QML), including the use of a single quantum device to execute deep QML
+                  circuits within limited qubit capacity and under noisy conditions. My proposal is to explore a
+                  modular framework for distributed execution on locally connected quantum units.
+                  It explores how to split circuits, support module interaction, study how different
+                  models benefit QML tasks, and apply causal inference to prune non-relevant
+                  parts and explain system behavior.
+                <li class="d-block pt-3">
+                  Distributed quantum computers connect many quantum chips over optical links,
+                  where losses, changing noise, and strict timing limit current quantum error
+                  correction (QEC). I'm interested to explore how to advance a unified, deadline-aware methodology
+                  that co-designs coding and decoding with message scheduling, explicitly using
+                  information on known losses and time-varying noise. The originality is to treat the
+                  full QEC cycle of encode, syndrome measurement, and decoding together with
+                  the network as a single system
+                </li>
                 <li class="d-block pt-3">
                   Implement novel hybrid protocols which employ post-quantum cryptography (PQC) and quantum key distribution (QKD) methods to take
                   advantage of the unbroken security of the quantum entanglement states for initial key distribution.
                   Combine effective isogeny-based algorithms (such as SIDH variants) with lattice-based ones such as ML-KEM and ML-DSA.
-                </li>
-                <li class="d-block pt-3">
-                  Boost security with quantum machine learning (QML) techniques, including anomaly detection and classifiers.
-                  Evaluate performance (latency, noise resilience, QBER) via real-world experiments.
                 </li>
               </ul>
             </section>
@@ -164,7 +171,7 @@
               <ul class="list-unstyled ps-0">
                 <li class="d-block pt-3">
                   Reviewed three IEEE papers on quantum-secure networks and systems for the <b>2025 IEEE Symposium on Computers and Communications (ISCC)</b>,
-                  specifically for the 30th ISCC – Workshop on Quantum-Secure Networks and Systems (QSNS), held in Bologna, Italy.
+                  specifically for the 30th ISCC - Workshop on Quantum-Secure Networks and Systems (QSNS), held in Bologna, Italy.
                 </li>
               </ul>
             </section>
@@ -172,7 +179,7 @@
         </main>
 
         <footer class="pt-5 my-5 text-muted border-top text-center">
-          © 2025
+          © 2025 Francesco Medina. All rights reserved.
         </footer>
       </div>
     </div>
