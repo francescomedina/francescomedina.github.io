@@ -19,12 +19,13 @@
       body { font-family: system-ui, sans-serif; }
   
       .navbar-custom .navbar-brand {
-        font-weight: 400;
-        font-size: clamp(1.4rem, 4.5vw, 2.5rem);
-        letter-spacing: clamp(2px, 0.7vw, 9px);
+        font-weight: 100;
+        font-size: clamp(2.4rem, 4.5vw, 3.5rem);
+        letter-spacing: clamp(21px, 0.5vw, 9px);
         color: #1a1a1a;
-        white-space: nowrap;
+        white-space: inherit;
         margin: .5rem 0;
+        line-height: 1em;
       }
   
       .subnav.sticky-top { z-index: 1020; }
@@ -51,9 +52,12 @@
 
 <body>
 
-  <nav class="navbar bg-white navbar-custom">
-    <div class="container-fluid d-flex justify-content-center">
-      <a class="navbar-brand" href="#">francesco medina</a>
+  <nav class="navbar bg-white navbar-custom pb-4">
+    <div class="container-fluid d-flex justify-content-center mx-2">
+      <a class="navbar-brand text-end" href="#">
+          <div>francesco</div>
+          <div>medina</div>
+      </a>
     </div>
   </nav>
 
